@@ -1,0 +1,14 @@
+.inputBox {
+    display: inline-flex;
+    flex-direction: row;
+
+}
+
+#textInput {
+    padding: 1px 6px;
+}
+
+#submit {
+    padding: 1px 6px;
+    margin-left: 5px;
+}
