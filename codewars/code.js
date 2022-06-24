@@ -99,11 +99,44 @@ function basicOp(operation, value1, value2) {
     // "SE", -45  -->  "E"
     // "W",  495  -->  "NE"
 
-function direction(facing, turn){
+// function direction(facing, turn){
   
+// }
+
+//--------------------------------------------------//
+
+// Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
+
+// Examples:
+
+// solution('abc', 'bc') // returns true
+// solution('abc', 'd') // returns false
+
+// function solution(str, ending){
+//     return str.endsWith(ending)
+// }
+
+// console.log(solution("rap", "ap"))
+
+// console.log(solution("rap", "ra"))
+
+//-------------------------------------------------//
+
+// You are given a list of unique integers arr, and two integers a and b. Your task is to find out whether or not a and b appear consecutively in arr, and return a boolean value (True if a and b are consecutive, False otherwise).
+
+// It is guaranteed that a and b are both present in arr.
+
+function consecutive(arr, a, b) {
+  //find a
+  const IndexA = arr.indexOf(a)
+  //find b
+  const IndexB = arr.indexOf(b)
+  //check if a or b are + 1 of the other
+  if(IndexA === IndexB + 1 || IndexB === IndexA + 1) {
+      return true
+  } else {
+      return false
+  }
 }
 
-//-----------------------------------------------//
-
-
-
+console.log(consecutive([3,4,5,6], 4, 6))
